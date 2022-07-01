@@ -1,0 +1,45 @@
+.spacer {
+  flex: 1 1 auto;
+}
+
+.container {
+  margin: auto;
+  margin-top: 80px;
+}
+
+button {
+  padding: 0.5rem;
+}
+
+button:hover {
+  background-color: rgba(111, 91, 111, 0.61);
+}
+
+mat-card {
+  margin-bottom: 2rem;
+}
+
+img {
+  border-radius: 10px;
+  width: 98%;
+  height: 250px;
+  object-fit: cover;
+}
+
+@media (max-width: 400px) {
+  .container {
+    width: 95%;
+  }
+}
+
+@media (min-width: 600px) {
+  .container {
+    width: 80%;
+  }
+}
+
+@media (min-width: 1000px) {
+  .container {
+    width: 50%;
+  }
+}

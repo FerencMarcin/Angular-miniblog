@@ -1,0 +1,59 @@
+:host {
+  display: block;
+  margin-top: 1rem;
+}
+
+.container {
+  margin: auto;
+  margin-top: 80px;
+}
+
+mat-spinner {
+  margin: auto;
+}
+
+.info-text {
+  text-align: center;
+}
+
+.post-image {
+  margin: auto;
+  width: 70%;
+}
+
+.post-image img {
+  width: 100%;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 400px) {
+  .container {
+    width: 99%;
+  }
+}
+
+@media (max-width: 600px) {
+  .post-image {
+    width: 100%;
+  }
+}
+
+@media (min-width: 600px) {
+  .container {
+    width: 80%;
+  }
+}
+
+@media (min-width: 1000px) {
+  .container {
+    width: 50%;
+  }
+}
+
+button {
+  padding: 0.5rem;
+}
+
+button:hover {
+  background-color: rgba(111, 91, 111, 0.61);
+}

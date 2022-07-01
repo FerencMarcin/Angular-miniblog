@@ -1,0 +1,20 @@
+<div class="container">
+
+  <mat-spinner *ngIf="isLoading"></mat-spinner>
+  <mat-card *ngIf="post && !isLoading">
+    <h1 style="text-align: center;">{{ post.title }}</h1>
+    <hr>
+    <p style="text-align: justify;">{{ post.content }}</p>
+    <br>
+    <div class="post-image">
+      <img [src]="post.imagePath" [alt]="post.title">
+    </div>
+    <hr>
+    <mat-action-row *ngIf="userIsAuthenticated && userId === post.creator">
+      <button mat-button color="primary" [routerLink]="['/edit', post.id]">EDYTUJ</button>
+    </mat-action-row>
+  </mat-card>
+
+  <p class="info-text mat-body-1" *ngIf="!post && !isLoading">Nie ma takiego wpisu!</p>
+
+</div>
